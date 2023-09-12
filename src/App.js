@@ -2,9 +2,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Demo from "./Demo";
-import DemoProfile from "./DemoProfile";
-import DemoContact from "./DemoContact";
+import Demo from "./Components/Demo";
+import DemoProfile from "./Components/DemoProfile";
+import DemoContact from "./Components/DemoContact";
 
 function App() {
   return (

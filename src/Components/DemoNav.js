@@ -1,13 +1,15 @@
-function DemoContact() {
+import Logo from "../Images/FyveBy+Logo+w+Text.png";
+
+function DemoNav(props) {
   return (
     <div className="border" style={{ width: "100vw", height: "98vh" }}>
       <div className="row" style={{ height: "100%" }}>
         <div className="col-md-2 col-lg-1 border" style={{ height: "100%" }}>
           <div
-            className="row border navbar navbar-primary navbar-fixed-left"
+            className="row border navbar navbar-primary navbar-fixed-left d-flex justify-content-center align-items-center"
             style={{ height: "15%" }}
           >
-            <p className="text-center navbar-brand">FYVEBY Logo</p>
+            <img src={Logo} alt="Logo" style={{ width: "60%" }}></img>
           </div>
           <div className="row border " id="nav" style={{ height: "85%" }}>
             <p>Profile Icon + route to /Profile</p>
@@ -23,21 +25,7 @@ function DemoContact() {
             className="row border d-flex flex-column justify-content-center align-items-center"
             style={{ height: "85%" }}
           >
-            <div
-              className="d-flex border justify-content-center align-items-center"
-              style={{ height: "100%", width: "100%" }}
-            >
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdPjO4k40MhOHnIl4YK0Bw1X1Jo7AixbmGnzViF--wSh-TivA/viewform?embedded=true"
-                title="Contact"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-                style={{ width: "85%", height: "85%" }}
-              >
-                Loading…
-              </iframe>
-            </div>
+            {props.content}
           </div>
         </div>
       </div>
@@ -45,4 +33,4 @@ function DemoContact() {
   );
 }
 
-export default DemoContact;
+export default DemoNav;
