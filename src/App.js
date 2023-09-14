@@ -18,7 +18,10 @@ function App() {
           </nav>
         </div> */}
         <div className="row">
-          <div className="col-md-2 bg-light sidebar">
+          <div
+            className="col-md-2 bg-light sidebar"
+            style={{ height: "100vh" }}
+          >
             <SideNavBar></SideNavBar>
           </div>
 
