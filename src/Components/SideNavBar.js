@@ -68,22 +68,15 @@ function SideNavBar() {
         </li>
       </ul>
       <hr />
-      <div className="dropdown">
-        <a
-          href="#"
-          className="d-flex align-items-center link-body-emphasis text-decoration-none "
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <img
-            src="https://github.com/mdo.png"
-            alt="Profile Picture"
-            width="32"
-            height="32"
-            className="rounded-circle me-2"
-          ></img>
-          <strong>John Smith</strong>
-        </a>
+      <div>
+        <img
+          src="https://github.com/mdo.png"
+          alt="Profile Picture"
+          width="32"
+          height="32"
+          className="rounded-circle me-2"
+        ></img>
+        <strong>John Smith</strong>
       </div>
     </div>
   );
