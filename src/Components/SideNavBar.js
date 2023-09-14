@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Logo from "../Images/FyveBy+Logo+w+Text.png";
 function SideNavBar() {
   let currentlyActive = "home";
   const changeActive = (id) => {
@@ -11,10 +12,21 @@ function SideNavBar() {
     active.classList.add("active");
   };
   return (
-    <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-primary">
+    <div
+      className="d-flex flex-column flex-shrink-0 p-3 bg-body-primary"
+      style={{ width: "100%" }}
+    >
       <svg className="bi pe-none me-2" width="40" height="32"></svg>
-      <span className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        Fyve By
+      <span
+        className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        style={{ width: "100%" }}
+      >
+        <img
+          className="img-responsive me-2"
+          src={Logo}
+          style={{ width: "4rem" }}
+        ></img>
+        <h3>Fyve By</h3>
       </span>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
@@ -59,7 +71,7 @@ function SideNavBar() {
       <div className="dropdown">
         <a
           href="#"
-          className="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+          className="d-flex align-items-center link-body-emphasis text-decoration-none "
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
@@ -72,13 +84,6 @@ function SideNavBar() {
           ></img>
           <strong>John Smith</strong>
         </a>
-        <ul className="dropdown-menu text-small shadow">
-          <li>
-            <Link className="dropdown-item" to="/demo/profile">
-              Profile
-            </Link>
-          </li>
-        </ul>
       </div>
     </div>
   );
