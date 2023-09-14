@@ -1,6 +1,6 @@
 function Videos() {
   return (
-    <div className="h-100 p-5 bg-body-tertiary rounded-3">
+    <div className="p-5 bg-body-tertiary rounded-3">
       <div className="row">
         <div className="col-xl-6">
           <video controls height={250} width={250}>
