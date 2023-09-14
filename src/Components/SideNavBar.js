@@ -65,7 +65,7 @@ function SideNavBar() {
         >
           <img
             src="https://github.com/mdo.png"
-            alt=""
+            alt="Profile Picture"
             width="32"
             height="32"
             className="rounded-circle me-2"
@@ -74,9 +74,9 @@ function SideNavBar() {
         </a>
         <ul className="dropdown-menu text-small shadow">
           <li>
-            <a className="dropdown-item" href="#">
+            <Link className="dropdown-item" to="/demo/profile">
               Profile
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
