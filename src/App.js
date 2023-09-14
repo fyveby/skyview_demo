@@ -17,11 +17,11 @@ function App() {
           </nav>
         </div> */}
         <div className="row">
-          <div className="col-md-2 bg-light sidebar border">
+          <div className="col-md-2 bg-light sidebar">
             <SideNavBar></SideNavBar>
-            </div>
+          </div>
 
-          <div className="col-md-10"> 
+          <div className="col-md-10">
             <Routes>
               <Route path="/demo" element={<Demo2></Demo2>}></Route>
               <Route
