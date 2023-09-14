@@ -12,14 +12,17 @@ function DemoNav(props) {
             <img src={Logo} alt="Logo" style={{ width: "60%" }}></img>
           </div>
           <div className="row border " id="nav" style={{ height: "85%" }}>
-            <p>Profile Icon + route to /Profile</p>
             <p>World</p>
           </div>
         </div>
 
         <div className="col-md-10 col-lg-11 border">
-          <div className="row border" style={{ height: "15%" }}>
-            Profile/Hangar #
+          <div
+            className="row border d-flex justify-content-center"
+            style={{ height: "15%" }}
+          >
+            <h2>Hanger 1</h2>
+            <i class="glyphicon glyphicon-user"></i>
           </div>
           <div
             className="row border d-flex flex-column justify-content-center align-items-center"
