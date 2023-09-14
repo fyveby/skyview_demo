@@ -1,6 +1,6 @@
-import DemoNav from "./DemoNav";
+import MainContainer from "./MainContainer";
 function DemoProfile() {
-  return <DemoNav></DemoNav>;
+  return <MainContainer type="4"></MainContainer>;
 }
 
 export default DemoProfile;
