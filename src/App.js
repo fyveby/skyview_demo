@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Demo from "./Components/Demo";
 import DemoProfile from "./Components/DemoProfile";
 import DemoContact from "./Components/DemoContact";
+import DemoFAQ from "./Components/DemoFAQ";
+import DemoUnity from "./Components/DemoUnity";
 
 function App() {
   return (
@@ -30,6 +32,14 @@ function App() {
               <Route
                 path="/demo/contact"
                 element={<DemoContact></DemoContact>}
+              ></Route>
+              <Route
+                path="/demo/faq"
+                element={<DemoFAQ></DemoFAQ>}
+              ></Route>
+              <Route
+                path="/demo/unity"
+                element={<DemoUnity></DemoUnity>}
               ></Route>
             </Routes>
           </div>

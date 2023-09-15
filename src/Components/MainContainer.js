@@ -1,14 +1,18 @@
 import ContactForm from "./ContactForm";
+import FAQ from "./FAQ";
 import Videos from "./Videos";
+import Unity from "./Unity";
 
 function MainContainer(props) {
-  const type = props.type;
-  console.log(type);
-  return (
-    <div>
-      {type == 1 && <Videos></Videos>}
-      {type == 2 && <ContactForm></ContactForm>}
-    </div>
-  );
-}
-export default MainContainer;
+    const type = props.type;
+    console.log(type);
+    return(
+        <div>
+            {type == "home" && <Videos></Videos>}
+            {type == "contact" && <ContactForm></ContactForm>}
+            {type == "faq" && <FAQ></FAQ>}
+            {type == "unity" && <Unity></Unity>}
+        </div>
+    )
+} export default MainContainer;
+
