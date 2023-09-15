@@ -15,6 +15,11 @@ function SideNavBar() {
           </Link>
         </li>
         <li className="nav-item">
+          <Link to="/demo/unity" className="nav-link link-body-emphasis">
+            Unity
+          </Link>
+        </li>
+        <li className="nav-item">
           <Link to="/demo/contact" className="nav-link link-body-emphasis">
             Contact Us
           </Link>
