@@ -24,7 +24,7 @@ function SideNavBar() {
         <img
           className="img-responsive me-2"
           src={Logo}
-          style={{ width: "4rem" }}
+          style={{ width: "30%" }}
         ></img>
         <h3>Fyve By</h3>
       </span>

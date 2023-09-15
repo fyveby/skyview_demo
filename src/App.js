@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import SideNavBar from "./Components/SideNavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Demo2 from "./Components/Demo2";
+import Demo from "./Components/Demo";
 import DemoProfile from "./Components/DemoProfile";
 import DemoContact from "./Components/DemoContact";
 
@@ -22,7 +22,7 @@ function App() {
 
           <div className="col-md-10">
             <Routes>
-              <Route path="/demo" element={<Demo2></Demo2>}></Route>
+              <Route path="/demo" element={<Demo></Demo>}></Route>
               <Route
                 path="/demo/profile"
                 element={<DemoProfile></DemoProfile>}
