@@ -43,12 +43,18 @@ function SideNavBar() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/demo/unity" className="nav-link link-body-emphasis">
+          <Link
+            to="/demo/unity"
+            className="nav-link link-body-emphasis"
+            id="unity"
+            onClick={() => {
+              changeActive("unity");
+            }}
+          >
             Unity
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/demo/contact" className="nav-link link-body-emphasis">
           <Link
             id="contact"
             to="/demo/contact"
