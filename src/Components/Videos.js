@@ -8,6 +8,7 @@ function Videos() {
             muted
             playsInline
             loop
+            preload
             webkit-playsinline
             height={250}
             width={250}
@@ -24,6 +25,7 @@ function Videos() {
             muted
             playsInline
             loop
+            preload
             webkit-playsinline
             height={250}
             width={250}
@@ -42,6 +44,7 @@ function Videos() {
             muted
             playsInline
             loop
+            preload
             webkit-playsinline
             height={250}
             width={250}
@@ -58,6 +61,7 @@ function Videos() {
             muted
             webkit-playsinline
             playsInline
+            preload
             loop
             height={250}
             width={250}
