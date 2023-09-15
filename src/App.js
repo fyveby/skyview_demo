@@ -1,12 +1,10 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import SideNavBar from "./Components/SideNavBar";
-import MainContainer from "./Components/MainContainer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Demo2 from "./Components/Demo2";
 import DemoProfile from "./Components/DemoProfile";
 import DemoContact from "./Components/DemoContact";
-import { useEffect } from "react";
 
 function App() {
   return (
