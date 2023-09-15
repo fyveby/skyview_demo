@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import SideNavBar from "./Components/SideNavBar";
-import MainContainer from "./Components/MainContainer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Demo from "./Components/Demo";
 import DemoProfile from "./Components/DemoProfile";
@@ -19,7 +18,7 @@ function App() {
           </nav>
         </div> */}
         <div className="row">
-          <div className="col-md-2 bg-light sidebar">
+          <div className="col-md-2 bg-light sidebar sidenav">
             <SideNavBar></SideNavBar>
           </div>
 
