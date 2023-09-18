@@ -3,7 +3,7 @@ import React from "react";
 function FAQ() {
   return (
     <div
-      className="d-flex border justify-content-center align-items-center"
+      className="d-flex justify-content-center align-items-center"
       style={{ height: "100vh", width: "100%" }}
     >
       <div
@@ -132,15 +132,13 @@ function FAQ() {
         </div>
 
         <ol class="list-group list-group-numbered">
-        <li class="list-group-item">A list item</li>
-        <li class="list-group-item">A list item</li>
-        <li class="list-group-item">A list item</li>
-      </ol>
+          <li class="list-group-item">A list item</li>
+          <li class="list-group-item">A list item</li>
+          <li class="list-group-item">A list item</li>
+        </ol>
       </div>
 
       <br />
-
-      
     </div>
   );
 }

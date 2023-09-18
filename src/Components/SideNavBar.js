@@ -8,7 +8,7 @@ function SideNavBar(props) {
     };
   };
   return (
-    <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-primary fill">
+    <div className="d-flex flex-column p-3 bg-body-primary fill">
       <svg className="bi pe-none me-2" width="40" height="16"></svg>
       <span className="d-flex justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none logobox">
         <img
@@ -60,9 +60,6 @@ function SideNavBar(props) {
             to="/demo/faq"
             id="/demo/faq"
             className="nav-link link-body-emphasis"
-            onClick={() => {
-              // changeActive("FAQ");
-            }}
           >
             FAQs
           </NavLink>
