@@ -8,9 +8,9 @@ function SideNavBar(props) {
     };
   };
   return (
-    <div className="d-flex flex-column p-3 bg-body-primary fill">
+    <div className="d-flex flex-column bg-body-primary border fill p-4">
       <svg className="bi pe-none me-2" width="40" height="16"></svg>
-      <span className="d-flex justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none logobox">
+      <span className="d-flex justify-content-center mb-3 mb-md-0 link-body-emphasis text-decoration-none logobox">
         <img
           className="img-responsive me-2"
           src={Logo}
@@ -59,7 +59,8 @@ function SideNavBar(props) {
           <NavLink
             to="/demo/faq"
             id="/demo/faq"
-            className="nav-link link-body-emphasis"
+            className="nav-link"
+            style={activeStyle}
           >
             FAQs
           </NavLink>

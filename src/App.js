@@ -15,7 +15,7 @@ Amplify.configure(awsconfig);
 function App() {
   return (
     <div className="container-fluid">
-      <Router className="border">
+      <Router>
         {/* <div className="row">
           <nav class="navbar navbar-dark bg-dark fixed-top flex-md-nowrap p-0 shadow">
             <span class="navbar-brand mb-0 h1 p-2">Hangar #1</span>
@@ -23,13 +23,13 @@ function App() {
         </div> */}
         <div className="row" style={{ padding: "0" }}>
           <div
-            className="col-md-2 col-lg-1 bg-light sidebar sidenav fill"
+            className="col-md-2 col-lg-2 bg-light sidebar sidenav fill"
             style={{ padding: "0" }}
           >
             <SideNavBar></SideNavBar>
           </div>
 
-          <div className="col-md-10 col-lg-11" style={{ margin: "0" }}>
+          <div className="col-md-10 col-lg-10 bg-body-tertiary">
             <Routes>
               <Route path="/" element={<DemoHome></DemoHome>}></Route>
               <Route path="/demo/camera" element={<Demo></Demo>}></Route>

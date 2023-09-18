@@ -27,7 +27,7 @@ function Videos() {
     <div className="fill">
       {!allLoad && <Loading></Loading>}
 
-      <div className="p-5 bg-body-tertiary rounded-3 fill">
+      <div className="rounded-3 fill">
         <div className="row">
           <div className="col-md-6 d-flex justify-content-center">
             <video
