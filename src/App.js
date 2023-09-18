@@ -18,11 +18,11 @@ function App() {
           </nav>
         </div> */}
         <div className="row">
-          <div className="col-md-2 bg-light sidebar sidenav">
+          <div className="col-md-2 col-lg-1 bg-light sidebar sidenav">
             <SideNavBar></SideNavBar>
           </div>
 
-          <div className="col-md-10">
+          <div className="col-md-10 col-lg-11">
             <Routes>
               <Route path="/demo" element={<Demo></Demo>}></Route>
               <Route
@@ -33,10 +33,7 @@ function App() {
                 path="/demo/contact"
                 element={<DemoContact></DemoContact>}
               ></Route>
-              <Route
-                path="/demo/faq"
-                element={<DemoFAQ></DemoFAQ>}
-              ></Route>
+              <Route path="/demo/faq" element={<DemoFAQ></DemoFAQ>}></Route>
               <Route
                 path="/demo/unity"
                 element={<DemoUnity></DemoUnity>}

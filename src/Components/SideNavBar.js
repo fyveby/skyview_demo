@@ -12,21 +12,14 @@ function SideNavBar() {
     active.classList.add("active");
   };
   return (
-    <div
-      className="d-flex flex-column flex-shrink-0 p-3 bg-body-primary"
-      style={{ width: "100%" }}
-    >
-      <svg className="bi pe-none me-2" width="40" height="32"></svg>
-      <span
-        className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        style={{ width: "100%" }}
-      >
+    <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-primary fill">
+      <svg className="bi pe-none me-2" width="40" height="16"></svg>
+      <span className="d-flex justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none logobox">
         <img
           className="img-responsive me-2"
           src={Logo}
-          style={{ width: "30%" }}
+          style={{ width: "50%", height: "100%" }}
         ></img>
-        <h3>Fyve By</h3>
       </span>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
