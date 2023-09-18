@@ -1,15 +1,11 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../Images/FyveBy+Logo+w+Text.png";
-function SideNavBar() {
-  let currentlyActive = "home";
-  const changeActive = (id) => {
-    const current = document.getElementById(currentlyActive);
-    const active = document.getElementById(id);
-    currentlyActive = id;
-    current.classList.remove("active");
-    current.classList.add("link-body-emphasis");
-    active.classList.remove("link-body-emphasis");
-    active.classList.add("active");
+
+function SideNavBar(props) {
+  const activeStyle = ({ isActive }) => {
+    return {
+      color: isActive ? "white" : "black",
+    };
   };
   return (
     <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-primary fill">
@@ -18,77 +14,65 @@ function SideNavBar() {
         <img
           className="img-responsive me-2"
           src={Logo}
+          alt="fyveby logo"
           style={{ width: "50%", height: "100%" }}
         ></img>
       </span>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <Link
-            to="/"
-            id="home"
-            className="nav-link active"
-            onClick={() => {
-              changeActive("home");
-            }}
-          >
+          <NavLink to="/" id="/" className="nav-link" style={activeStyle}>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link
-            to="/demo"
-            id="demo"
+          <NavLink
+            to="/demo/camera"
+            id="/demo/camera"
             className="nav-link"
-            onClick={() => {
-              changeActive("demo");
-            }}
+            style={activeStyle}
           >
-            Cameras
-          </Link>
+            Camera - Demo
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link
+          <NavLink
             to="/demo/unity"
-            className="nav-link link-body-emphasis"
-            id="unity"
-            onClick={() => {
-              changeActive("unity");
-            }}
+            className="nav-link"
+            style={activeStyle}
+            id="/demo/unity"
           >
-            Unity
-          </Link>
+            Unity - Demo
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link
-            id="contact"
+          <NavLink
+            id="/demo/contact"
             to="/demo/contact"
-            className="nav-link link-body-emphasis"
-            onClick={() => {
-              changeActive("contact");
-            }}
+            className="nav-link"
+            style={activeStyle}
           >
             Contact Us
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/demo/faq"
-            id="FAQ"
+            id="/demo/faq"
             className="nav-link link-body-emphasis"
             onClick={() => {
-              changeActive("FAQ");
+              // changeActive("FAQ");
             }}
           >
             FAQs
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <hr />
       <div>
         <img
           src="https://github.com/mdo.png"
-          alt="Profile Picture"
+          alt="Profile"
           width="32"
           height="32"
           className="rounded-circle me-2"

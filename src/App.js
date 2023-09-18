@@ -8,6 +8,9 @@ import DemoContact from "./Components/DemoContact";
 import DemoFAQ from "./Components/DemoFAQ";
 import DemoUnity from "./Components/DemoUnity";
 import DemoHome from "./Components/DemoHome";
+import { Amplify } from "aws-amplify";
+import awsconfig from "./aws-exports";
+Amplify.configure(awsconfig);
 
 function App() {
   return (
@@ -26,7 +29,7 @@ function App() {
           <div className="col-md-10 col-lg-11">
             <Routes>
               <Route path="/" element={<DemoHome></DemoHome>}></Route>
-              <Route path="/demo" element={<Demo></Demo>}></Route>
+              <Route path="/demo/camera" element={<Demo></Demo>}></Route>
               <Route
                 path="/demo/profile"
                 element={<DemoProfile></DemoProfile>}

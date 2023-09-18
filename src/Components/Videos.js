@@ -20,7 +20,6 @@ function Videos() {
     };
     const timeoutID = setTimeout(playFunct, 1500);
     return () => {
-      console.log("hello");
       clearTimeout(timeoutID);
     };
   }, [allLoad]);

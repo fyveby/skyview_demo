@@ -7,7 +7,7 @@ import Login from "./Login";
 function MainContainer(props) {
   const type = props.type;
   return (
-    <div className="fill">
+    <div className="fill border">
       {type == "home" && <Login></Login>}
       {type == "demo" && <Videos></Videos>}
       {type == "contact" && <ContactForm></ContactForm>}

@@ -8,16 +8,11 @@ function Unity() {
     >
       <iframe
         id="webgl_iframe"
-        frameborder="0"
         allow="autoplay; fullscreen; vr"
-        allowfullscreen="false"
-        allowvr=""
-        mozallowfullscreen="true"
+        allowFullScreen="false"
         src="https://play.unity.com/webgl/6a216d6f-d78c-478b-8a1f-eb38a4fdb291?screenshot=false&embedType=embed"
         width="810"
         height="640"
-        onmousewheel=""
-        webkitallowfullscreen="true"
       ></iframe>
     </div>
   );
