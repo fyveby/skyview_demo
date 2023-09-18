@@ -25,7 +25,7 @@ function SideNavBar() {
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
           <Link
-            to="/demo"
+            to="/"
             id="home"
             className="nav-link active"
             onClick={() => {
@@ -33,6 +33,18 @@ function SideNavBar() {
             }}
           >
             Home
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="/demo"
+            id="demo"
+            className="nav-link"
+            onClick={() => {
+              changeActive("demo");
+            }}
+          >
+            Cameras
           </Link>
         </li>
         <li className="nav-item">

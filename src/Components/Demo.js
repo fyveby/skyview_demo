@@ -1,9 +1,6 @@
 import MainContainer from "./MainContainer";
 
-function Demo2 () {
-    return(
-        
-        <MainContainer type="home"></MainContainer>
-        
-    )
-} export default Demo2;
+function Demo() {
+  return <MainContainer type="demo"></MainContainer>;
+}
+export default Demo;

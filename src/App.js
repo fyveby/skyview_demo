@@ -7,6 +7,7 @@ import DemoProfile from "./Components/DemoProfile";
 import DemoContact from "./Components/DemoContact";
 import DemoFAQ from "./Components/DemoFAQ";
 import DemoUnity from "./Components/DemoUnity";
+import DemoHome from "./Components/DemoHome";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
           <div className="col-md-10 col-lg-11">
             <Routes>
+              <Route path="/" element={<DemoHome></DemoHome>}></Route>
               <Route path="/demo" element={<Demo></Demo>}></Route>
               <Route
                 path="/demo/profile"

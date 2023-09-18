@@ -18,9 +18,10 @@ function Videos() {
       player3.play();
       player4.play();
     };
-    setTimeout(playFunct, 1000);
+    const timeoutID = setTimeout(playFunct, 1500);
     return () => {
-      clearTimeout(playFunct);
+      console.log("hello");
+      clearTimeout(timeoutID);
     };
   }, [allLoad]);
   return (
