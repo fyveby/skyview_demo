@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
+import { useRef } from "react";
 
 function Videos() {
   const [allLoad, setAllLoad] = useState(false);
@@ -34,6 +35,7 @@ function Videos() {
             id="webgl_iframe"
             allow="autoplay"
             src="https://i.simmer.io/@rinkyfulwani/fyveby"
+            style={{ pointerEvents: "none" }}
             className="unity"
           ></iframe>
         </div>
