@@ -6,13 +6,16 @@ function Unity() {
       className="d-flex  justify-content-center align-items-center"
       style={{ height: "100vh", width: "100%" }}
     >
-      <iframe
+      
+      <iframe style={{ width: "90%", height: "85%" }}
         id="webgl_iframe"
         allow="autoplay; fullscreen; vr"
-        allowFullScreen="false"
-        src="https://play.unity.com/webgl/6a216d6f-d78c-478b-8a1f-eb38a4fdb291?screenshot=false&embedType=embed"
-        width="810"
-        height="640"
+        allowfullscreen="false"
+        allowvr=""
+        mozallowfullscreen="true"
+        src="https://i.simmer.io/@rinkyfulwani/fyveby"
+        onmousewheel=""
+        webkitallowfullscreen="true"
       ></iframe>
     </div>
   );
