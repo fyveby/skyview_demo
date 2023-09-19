@@ -5,6 +5,7 @@ function FAQItem(props) {
     const question = props.question;
     const answer = props.answer;
     const areaExpandable = props.areaExpandable;
+    const style = {fontSize: 18}
   return (
     <div className="accordion-item">
       <h2 className="accordion-header">
@@ -14,6 +15,7 @@ function FAQItem(props) {
           data-bs-toggle="collapse"
           data-bs-target={"#"+id}
           aria-controls={id}
+          style={style}
         >
           {question}
         </button>
@@ -23,7 +25,7 @@ function FAQItem(props) {
         className="accordion-collapse collapse"
         data-bs-parent="#accordionExample"
       >
-        <div className="accordion-body">
+        <div className="accordion-body" style={style}>
           {answer}
         </div>
       </div>
