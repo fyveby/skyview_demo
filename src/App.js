@@ -7,7 +7,7 @@ import DemoProfile from "./Components/DemoProfile";
 import DemoContact from "./Components/DemoContact";
 import DemoFAQ from "./Components/DemoFAQ";
 import DemoUnity from "./Components/DemoUnity";
-import DemoHome from "./Components/DemoHome";
+import Login from "./Components/Login";
 import { Amplify } from "aws-amplify";
 import awsconfig from "./aws-exports";
 Amplify.configure(awsconfig);
@@ -22,16 +22,16 @@ function App() {
           </nav>
         </div> */}
         <div className="row" style={{ padding: "0" }}>
-          <div
+          {/* <div
             className="col-md-2 col-lg-2 bg-light sidebar sidenav fill"
             style={{ padding: "0" }}
           >
             <SideNavBar></SideNavBar>
-          </div>
+          </div> */}
 
-          <div className="col-md-10 col-lg-10 bg-body-tertiary">
+          <div className="col-md-12 col-lg-12 bg-body-tertiary">
             <Routes>
-              <Route path="/" element={<DemoHome></DemoHome>}></Route>
+              <Route path="/" element={<Login></Login>}></Route>
               <Route path="/demo/camera" element={<Demo></Demo>}></Route>
               <Route
                 path="/demo/profile"
