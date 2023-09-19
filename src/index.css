@@ -38,3 +38,22 @@ code {
     height: 100vh;
   }
 }
+
+.unity {
+  aspect-ratio: 1 / 0.615;
+  overflow: "hidden";
+}
+
+@media screen and (min-width: 1740px) {
+  .unity {
+    aspect-ratio: 16 / 9.9;
+  }
+}
+
+.videoRow {
+  height: 40%;
+}
+
+.sidenav {
+  height: 100vh;
+}

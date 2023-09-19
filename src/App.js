@@ -6,7 +6,6 @@ import Demo from "./Components/Demo";
 import DemoProfile from "./Components/DemoProfile";
 import DemoContact from "./Components/DemoContact";
 import DemoFAQ from "./Components/DemoFAQ";
-import DemoUnity from "./Components/DemoUnity";
 import Login from "./Components/Login";
 import { Amplify } from "aws-amplify";
 import awsconfig from "./aws-exports";
@@ -21,7 +20,7 @@ function App() {
             <span class="navbar-brand mb-0 h1 p-2">Hangar #1</span>
           </nav>
         </div> */}
-        <div className="row" style={{ padding: "0" }}>
+        <div className="row fill">
           {/* <div
             className="col-md-2 col-lg-2 bg-light sidebar sidenav fill"
             style={{ padding: "0" }}
@@ -42,10 +41,6 @@ function App() {
                 element={<DemoContact></DemoContact>}
               ></Route>
               <Route path="/demo/faq" element={<DemoFAQ></DemoFAQ>}></Route>
-              <Route
-                path="/demo/unity"
-                element={<DemoUnity></DemoUnity>}
-              ></Route>
             </Routes>
           </div>
         </div>

@@ -23,19 +23,27 @@ function Videos() {
       clearTimeout(timeoutID);
     };
   }, [allLoad]);
+
   return (
-    <div className="fill">
+    <div className="fill border">
       {!allLoad && <Loading></Loading>}
 
-      <div className="rounded-3 fill">
+      <div className="fill container-fluid">
         <div className="row">
+          <iframe
+            id="webgl_iframe"
+            allow="autoplay"
+            src="https://i.simmer.io/@rinkyfulwani/fyveby"
+            className="unity"
+          ></iframe>
+        </div>
+        <div className="row g-0" style={{ height: "auto" }}>
           <div className="col-md-6 d-flex justify-content-center">
             <video
               muted
               playsInline
               loop
-              height={250}
-              width={250}
+              className="fill"
               id="p1"
               onCanPlayThrough={() => {
                 p1 = true;
@@ -55,8 +63,7 @@ function Videos() {
               muted
               playsInline
               loop
-              height={250}
-              width={250}
+              className="fill"
               id="p2"
               onCanPlayThrough={() => {
                 p2 = true;
@@ -72,14 +79,13 @@ function Videos() {
             </video>
           </div>
         </div>
-        <div className="row">
+        <div className="row g-0" style={{ height: "" }}>
           <div className="col-md-6 d-flex justify-content-center">
             <video
               muted
               playsInline
               loop
-              height={250}
-              width={250}
+              className="fill"
               id="p3"
               onCanPlayThrough={() => {
                 p3 = true;
@@ -100,8 +106,7 @@ function Videos() {
               muted
               playsInline
               loop
-              height={250}
-              width={250}
+              className="fill"
               id="p4"
               onCanPlayThrough={() => {
                 p4 = true;
