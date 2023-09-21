@@ -9,6 +9,7 @@ import DemoFAQ from "./Components/DemoFAQ";
 import Login from "./Components/Login";
 import { Amplify } from "aws-amplify";
 import awsconfig from "./aws-exports";
+import Home from "./Components/Home";
 Amplify.configure(awsconfig);
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <div className="row fill">
           <div className="col-md-12 col-lg-12 bg-body-tertiary">
             <Routes>
-              <Route path="/" element={<Login></Login>}></Route>
+              <Route path="/" element={<Home></Home>}></Route>
               <Route path="/demo/camera" element={<Demo></Demo>}></Route>
               <Route
                 path="/demo/profile"

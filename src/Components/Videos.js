@@ -37,7 +37,8 @@ function Videos() {
           <iframe
             id="webgl_iframe"
             allow="autoplay"
-            src="https://i.simmer.io/@rinkyfulwani/fyveby"
+            src="https://i.simmer.io/@rinkyfulwani/fyvebyinteractive"
+            style={{ pointerEvents: "none" }}
             className="unity"
             onLoad={() => {
               v1 = true;
