@@ -59,7 +59,7 @@ function Home() {
         </div>
         <div className="col-lg-6 align-items-center">
           <Link
-            to="/demoCam"
+            to="/demoContact"
             className="btn btn-primary btn-lg"
             style={btnStyle}
           >
