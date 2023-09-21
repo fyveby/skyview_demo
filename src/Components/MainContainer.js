@@ -1,7 +1,6 @@
 import ContactForm from "./ContactForm";
 import FAQ from "./FAQ";
 import Videos from "./Videos";
-import Login from "./Login";
 import SideNavBar from "./SideNavBar";
 
 function MainContainer(props) {

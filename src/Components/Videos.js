@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
-import { useRef } from "react";
-
 function Videos() {
   const [allLoad, setAllLoad] = useState(false);
+  //variable to keep track of what things have loaded
   let p1 = false;
   let p2 = false;
   let p3 = false;
   let p4 = false;
+  let v1 = false;
+
+  //play vids when all items have loaded.
   useEffect(() => {
     const playFunct = () => {
       const player1 = document.getElementById("p1");
@@ -19,8 +21,9 @@ function Videos() {
       player3.play();
       player4.play();
     };
-    const timeoutID = setTimeout(playFunct, 1500);
+    const timeoutID = setTimeout(playFunct, 2000);
     return () => {
+      //get rid of timeout when component is unloaded
       clearTimeout(timeoutID);
     };
   }, [allLoad]);
@@ -37,6 +40,18 @@ function Videos() {
             src="https://i.simmer.io/@rinkyfulwani/fyveby"
             style={{ pointerEvents: "none" }}
             className="unity"
+            onLoad={() => {
+              v1 = true;
+              if (
+                p1 === true &&
+                p2 === true &&
+                p3 === true &&
+                p4 === true &&
+                v1 === true
+              ) {
+                setAllLoad(true);
+              }
+            }}
           ></iframe>
         </div>
         <div className="row g-0" style={{ height: "auto" }}>
@@ -49,7 +64,13 @@ function Videos() {
               id="p1"
               onCanPlayThrough={() => {
                 p1 = true;
-                if (p1 === true && p2 === true && p3 === true && p4 === true) {
+                if (
+                  p1 === true &&
+                  p2 === true &&
+                  p3 === true &&
+                  p4 === true &&
+                  v1 === true
+                ) {
                   setAllLoad(true);
                 }
               }}
@@ -69,7 +90,13 @@ function Videos() {
               id="p2"
               onCanPlayThrough={() => {
                 p2 = true;
-                if (p1 === true && p2 === true && p3 === true && p4 === true) {
+                if (
+                  p1 === true &&
+                  p2 === true &&
+                  p3 === true &&
+                  p4 === true &&
+                  v1 === true
+                ) {
                   setAllLoad(true);
                 }
               }}
@@ -92,7 +119,13 @@ function Videos() {
               onCanPlayThrough={() => {
                 p3 = true;
 
-                if (p1 === true && p2 === true && p3 === true && p4 === true) {
+                if (
+                  p1 === true &&
+                  p2 === true &&
+                  p3 === true &&
+                  p4 === true &&
+                  v1 === true
+                ) {
                   setAllLoad(true);
                 }
               }}
@@ -113,7 +146,13 @@ function Videos() {
               onCanPlayThrough={() => {
                 p4 = true;
 
-                if (p1 === true && p2 === true && p3 === true && p4 === true) {
+                if (
+                  p1 === true &&
+                  p2 === true &&
+                  p3 === true &&
+                  p4 === true &&
+                  v1 === true
+                ) {
                   setAllLoad(true);
                 }
               }}
