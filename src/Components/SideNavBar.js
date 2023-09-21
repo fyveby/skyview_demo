@@ -61,7 +61,7 @@ function SideNavBar(props) {
         </li>
       </ul>
       <hr />
-      <div>
+      <div className="px-2">
         <img
           src={ProfPic}
           alt="Profile"
