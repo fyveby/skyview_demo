@@ -6,8 +6,8 @@ function SideNavBar(props) {
   const activeStyle = ({ isActive }) => {
     return {
       color: isActive ? "white" : "black",
-      'background-color': isActive ? '#2B7DA3': 'E8EAF5',
-      'fontSize': '2rem'
+      "background-color": isActive ? "#2B7DA3" : "E8EAF5",
+      fontSize: "2rem",
     };
   };
   return (
@@ -30,8 +30,8 @@ function SideNavBar(props) {
         </li>
         <li className="nav-item">
           <NavLink
-            to="/demo/camera"
-            id="/demo/camera"
+            to="/demoCam"
+            id="/demoCam"
             className="nav-link"
             style={activeStyle}
           >
@@ -41,8 +41,8 @@ function SideNavBar(props) {
 
         <li className="nav-item">
           <NavLink
-            id="/demo/contact"
-            to="/demo/contact"
+            id="/demoContact"
+            to="/demoContact"
             className="nav-link"
             style={activeStyle}
           >
@@ -51,8 +51,8 @@ function SideNavBar(props) {
         </li>
         <li>
           <NavLink
-            to="/demo/faq"
-            id="/demo/faq"
+            to="/demoFAQ"
+            id="/demoFAQ"
             className="nav-link"
             style={activeStyle}
           >
@@ -69,7 +69,7 @@ function SideNavBar(props) {
           height="32"
           className="rounded-circle me-2"
         ></img>
-        <span style={{fontSize: '1.5rem'}}>John Smith</span>
+        <span style={{ fontSize: "1.5rem" }}>John Smith</span>
       </div>
     </div>
   );

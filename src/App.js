@@ -6,7 +6,6 @@ import Demo from "./Components/Demo";
 import DemoProfile from "./Components/DemoProfile";
 import DemoContact from "./Components/DemoContact";
 import DemoFAQ from "./Components/DemoFAQ";
-import Login from "./Components/Login";
 import { Amplify } from "aws-amplify";
 import awsconfig from "./aws-exports";
 import Home from "./Components/Home";
@@ -20,16 +19,16 @@ function App() {
           <div className="col-md-12 col-lg-12 bg-body-tertiary">
             <Routes>
               <Route path="/" element={<Home></Home>}></Route>
-              <Route path="/demo/camera" element={<Demo></Demo>}></Route>
+              <Route path="/demoCam" element={<Demo></Demo>}></Route>
               <Route
-                path="/demo/profile"
+                path="/demoProfile"
                 element={<DemoProfile></DemoProfile>}
               ></Route>
               <Route
-                path="/demo/contact"
+                path="/demoContact"
                 element={<DemoContact></DemoContact>}
               ></Route>
-              <Route path="/demo/faq" element={<DemoFAQ></DemoFAQ>}></Route>
+              <Route path="/demoFAQ" element={<DemoFAQ></DemoFAQ>}></Route>
             </Routes>
           </div>
         </div>
