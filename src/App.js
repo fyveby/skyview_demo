@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="container-fluid">
       <Router>
-        <div className="row fill">
-          <div className="col-md-12 col-lg-12 bg-body-tertiary">
+        <div className="row" style={{ height: "100vh" }}>
+          <div className="col-md-12 col-lg-12 bg-body-tertiary fill">
             <Routes>
               <Route path="/" element={<Home></Home>}></Route>
               <Route path="/demoCam" element={<Demo></Demo>}></Route>

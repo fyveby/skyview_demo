@@ -30,22 +30,22 @@ function Home() {
     //       </div>
     //     </div>
     //   </div>
-    <div>
-      <div class="row px-4 py-5 my-5 text-center">
+    <div className="fill">
+      <div className="row px-4 py-5 my-5 text-center">
         <div className="col-md-4"></div>
         <div className="col-md-4">
           <img
-            class="mx-auto mb-4"
+            className="mx-auto mb-4"
             src={image}
             alt=""
             width="250"
-            height="250"
+            height="284.4"
           />
         </div>
         <div className="col-md-4"></div>
       </div>
 
-      <div class="row px-4 py-5 my-5 text-center justify-content-center align-items-center">
+      <div className="row px-4 py-5 my-5 text-center justify-content-center align-items-center">
         <div className="col-lg-6 align-items-center">
           <Link
             to="/demoCam"
