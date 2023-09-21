@@ -15,19 +15,7 @@ function App() {
   return (
     <div className="container-fluid">
       <Router>
-        {/* <div className="row">
-          <nav class="navbar navbar-dark bg-dark fixed-top flex-md-nowrap p-0 shadow">
-            <span class="navbar-brand mb-0 h1 p-2">Hangar #1</span>
-          </nav>
-        </div> */}
         <div className="row fill">
-          {/* <div
-            className="col-md-2 col-lg-2 bg-light sidebar sidenav fill"
-            style={{ padding: "0" }}
-          >
-            <SideNavBar></SideNavBar>
-          </div> */}
-
           <div className="col-md-12 col-lg-12 bg-body-tertiary">
             <Routes>
               <Route path="/" element={<Login></Login>}></Route>
