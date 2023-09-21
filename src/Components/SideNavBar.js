@@ -1,10 +1,13 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../Images/FyveBy+Logo+w+Text.png";
+import ProfPic from "../Images/ProfPic.jpg";
 
 function SideNavBar(props) {
   const activeStyle = ({ isActive }) => {
     return {
       color: isActive ? "white" : "black",
+      'background-color': isActive ? '#2B7DA3': 'E8EAF5',
+      'fontSize': '2rem'
     };
   };
   return (
@@ -32,7 +35,7 @@ function SideNavBar(props) {
             className="nav-link"
             style={activeStyle}
           >
-            Demo
+            Dashboard
           </NavLink>
         </li>
 
@@ -60,13 +63,13 @@ function SideNavBar(props) {
       <hr />
       <div>
         <img
-          src="https://github.com/mdo.png"
+          src={ProfPic}
           alt="Profile"
           width="32"
           height="32"
           className="rounded-circle me-2"
         ></img>
-        <strong>John Smith</strong>
+        <span style={{fontSize: '1.5rem'}}>John Smith</span>
       </div>
     </div>
   );
