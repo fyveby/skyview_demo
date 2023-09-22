@@ -2,6 +2,7 @@ import ContactForm from "./ContactForm";
 import FAQ from "./FAQ";
 import Videos from "./Videos";
 import SideNavBar from "./SideNavBar";
+import Videos2 from "./Videos2";
 
 function MainContainer(props) {
   const type = props.type;
@@ -15,7 +16,7 @@ function MainContainer(props) {
           <SideNavBar></SideNavBar>
         </div>
         <div className="col-md-10 col-lg-10">
-          {type == "demo" && <Videos></Videos>}
+          {type == "demo" && <Videos2></Videos2>}
           {type == "contact" && <ContactForm></ContactForm>}
           {type == "faq" && <FAQ></FAQ>}
         </div>

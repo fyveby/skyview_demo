@@ -6,7 +6,7 @@ function SideNavBar(props) {
   const activeStyle = ({ isActive }) => {
     return {
       color: isActive ? "white" : "black",
-      "background-color": isActive ? "#2B7DA3" : "E8EAF5",
+      backgroundColor: isActive ? "#2B7DA3" : "E8EAF5",
       fontSize: "2rem",
     };
   };
