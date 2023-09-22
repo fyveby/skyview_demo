@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../Images/FyveBy+Logo+w+Text.png";
 import ProfPic from "../Images/ProfPic.jpg";
+import { stackOverflow } from "fontawesome";
 
 function SideNavBar(props) {
   const activeStyle = ({ isActive }) => {
@@ -11,7 +12,7 @@ function SideNavBar(props) {
     };
   };
   return (
-    <div className="d-flex flex-column bg-body-primary p-4 sidenav">
+    <div className="d-flex flex-column bg-body-primary sidenav">
       <svg className="bi pe-none me-2" width="40" height="16"></svg>
       <span className="d-flex justify-content-center mb-3 mb-md-0 link-body-emphasis text-decoration-none logobox">
         <img

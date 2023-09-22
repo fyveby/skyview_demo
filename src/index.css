@@ -39,6 +39,9 @@ code {
   }
 }
 
+.sidenav {
+  height: 150vh;
+}
 .unity {
   aspect-ratio: 1 / 0.615;
   overflow: "hidden";
