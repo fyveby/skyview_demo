@@ -30,10 +30,10 @@ function Home() {
     //       </div>
     //     </div>
     //   </div>
-    <div className="fill">
-      <div className="row px-4 py-5 my-5 text-center">
-        <div className="col-md-4"></div>
-        <div className="col-md-4">
+    <div className="fill d-flex flex-column justify-content-center home">
+      <div className="row py-5 my-5 mx-0 text-center">
+        <div className="col-md-4 px-0"></div>
+        <div className="col-md-4 px-0">
           <img
             className="mx-auto mb-4"
             src={image}
@@ -42,10 +42,10 @@ function Home() {
             height="284.4"
           />
         </div>
-        <div className="col-md-4"></div>
+        <div className="col-md-4 px-0"></div>
       </div>
 
-      <div className="row px-4 py-5 my-5 text-center justify-content-center align-items-center">
+      <div className="row px-4 py-5 my-5 mx-0 text-center justify-content-center align-items-center">
         <div className="col-lg-6 align-items-center">
           <Link
             to="/demoCam"
@@ -53,13 +53,13 @@ function Home() {
             style={btnStyle}
           >
             <span className="px-5" style={textStyle}>
-              Click here to watch a Demo
+              Click here for a Demo
             </span>
           </Link>
         </div>
         <div className="col-lg-6 align-items-center">
           <Link
-            to="/demoCam"
+            to="/demoContact"
             className="btn btn-primary btn-lg"
             style={btnStyle}
           >

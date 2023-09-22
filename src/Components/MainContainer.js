@@ -7,7 +7,7 @@ import Videos2 from "./Videos2";
 function MainContainer(props) {
   const type = props.type;
   return (
-    <div className="container-fluid border fill p-0">
+    <div className="container-fluid fill p-0">
       <div className="row">
         <div
           className="col-md-2 col-lg-2 bg-light sidebar sidenav fill"

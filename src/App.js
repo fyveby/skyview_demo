@@ -13,10 +13,10 @@ Amplify.configure(awsconfig);
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
       <Router>
-        <div className="row" style={{ height: "100vh" }}>
-          <div className="col-md-12 col-lg-12 bg-body-tertiary fill">
+        <div className="row m-0" style={{ height: "100vh", width: "100vw" }}>
+          <div className="col-md-12 col-lg-12 bg-body-tertiary fill p-0">
             <Routes>
               <Route path="/" element={<Home></Home>}></Route>
               <Route path="/demoCam" element={<Demo></Demo>}></Route>

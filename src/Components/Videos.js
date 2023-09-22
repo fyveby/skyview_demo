@@ -29,10 +29,10 @@ function Videos() {
   }, [allLoad]);
 
   return (
-    <div className="fill border">
+    <div className="fill">
       {!allLoad && <Loading></Loading>}
 
-      <div className="fill container-fluid">
+      <div className="fill container-fluid p-0">
         <div className="row">
           <iframe
             id="webgl_iframe"
