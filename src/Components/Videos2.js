@@ -2,6 +2,10 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import Loading from "./Loading";
+import Image1 from "../Images/Hangar_Rash1.jpg";
+import  Image2 from "../Images/Hangar_Rash2.jpg";
+import  Image3 from "../Images/Hangar_Rash3.jpg";
+import Image4  from "../Images/Hangar_Rash4.jpg";
 
 function Videos2() {
   // const [visStyle, setVisStyle] = useState({ visibility: "hidden" });
@@ -73,11 +77,13 @@ function Videos2() {
         />
       </div>
       <div className="row py-2">
-        <h2 style={{ color: "#2B7DA3" }}>Live Camera Feed</h2>
+        <h2 style={{ color: "#2B7DA3" }}>Camera Feed</h2>
       </div>
       <div className="row py-2 g-0">
         <div className="col-lg-6">
-          <video
+          {/* Changed to images for Georgia Tech Demo */}
+          <img src={Image1} style={{height:"400px"}} className="fill px-2 mx-auto"></img>
+          {/* <video
             muted
             playsInline
             loop
@@ -86,10 +92,11 @@ function Videos2() {
             id="p1"
             src="https://nbaa-demo-video-storage.s3.amazonaws.com/mixkit-airplane-taking-off-in-the-sun-27988-medium.mp4"
             type="video/mp4"
-          ></video>
+    ></video>*/}
         </div>
         <div className="col-lg-6">
-          <video
+        <img src={Image2} style={{height:"400px"}} className="fill px-2 mx-auto"></img>
+          {/*<video
             muted
             playsInline
             loop
@@ -99,12 +106,13 @@ function Videos2() {
             src="https://nbaa-demo-video-storage.s3.amazonaws.com/mixkit-airplane-taking-off-in-the-sun-27988-medium.mp4"
             type="video/mp4"
             
-          ></video>
+  ></video>*/}
         </div>
       </div>
-      <div className="row g-0">
+      <div className="row py-2 g-0">
         <div className="col-lg-6">
-          <video
+        <img src={Image3} style={{height:"400px"}} className="fill px-2 mx-auto"></img>
+          {/*<video
             muted
             playsInline
             loop
@@ -114,10 +122,11 @@ function Videos2() {
             src="https://nbaa-demo-video-storage.s3.amazonaws.com/mixkit-airplane-taking-off-in-the-sun-27988-medium.mp4"
             type="video/mp4"
             
-          ></video>
+></video>*/}
         </div>
         <div className="col-lg-6">
-          <video
+        <img src={Image4} style={{height:"400px"}} className="fill px-2 mx-auto"></img>
+          {/*<video
             muted
             playsInline
             loop
@@ -126,7 +135,7 @@ function Videos2() {
             id="p1"
             src="https://nbaa-demo-video-storage.s3.amazonaws.com/mixkit-airplane-taking-off-in-the-sun-27988-medium.mp4"
             type="video/mp4"
-          ></video>
+          ></video> */}
         </div>
       </div>
     </div>
