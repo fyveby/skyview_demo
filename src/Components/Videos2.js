@@ -49,7 +49,7 @@ function Videos2() {
 
   const loadOne = (elementNum) => {
     load[elementNum] = true;
-    if (load[0] && load[1] && load[2] && load[3] && load[4]) {
+    if (load[0] && load[1] && load[2] && load[3]) {
       setAllLoaded(true);
     }
   };
