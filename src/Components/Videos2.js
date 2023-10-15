@@ -1,11 +1,8 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import Loading from "./Loading";
-import Image1 from "../Images/Hangar_Rash1.jpg";
-import Image2 from "../Images/Hangar_Rash2.jpg";
-import Image3 from "../Images/Hangar_Rash3.jpg";
-import Image4 from "../Images/Hangar_Rash4.jpg";
+import Video from "../Images/demo_video.mp4";
 
 function Videos2() {
   // const [visStyle, setVisStyle] = useState({ visibility: "hidden" });
@@ -57,6 +54,12 @@ function Videos2() {
   //     setAllLoaded(true);
   //   }
   // };
+
+  useEffect(() => {
+    return () => {
+      window.stop();
+    };
+  }, []);
   return (
     <div
       className="container"
@@ -65,13 +68,13 @@ function Videos2() {
       <div className="row py-2">
         <h2 style={{ color: "#2B7DA3" }}>Digital Feed</h2>
       </div>
-      {/* {isLoaded === false && (
+      {isLoaded === false && (
         // We'll conditionally render the loading overlay if the Unity
         // Application is not loaded.
         <div>
           <Loading></Loading>
         </div>
-      )} */}
+      )}
       <div className="row">
         <Unity
           className="unity px-3 py-2 mx-auto"
@@ -83,78 +86,16 @@ function Videos2() {
         <h2 style={{ color: "#2B7DA3" }}>Camera Feed</h2>
       </div>
       <div className="row py-2 g-0">
-        <div className="col-lg-6">
-          {/* Changed to images for Georgia Tech Demo */}
-          <img
-            src={Image1}
-            style={{ height: "400px" }}
-            className="fill px-2 mx-auto"
-          ></img>
-          {/* <video
+        <div className="col-12">
+          <video
             muted
             playsInline
             loop
             autoPlay
             className="fill px-2 mx-auto"
-            id="p1"
-            src="https://nbaa-demo-video-storage.s3.amazonaws.com/mixkit-airplane-taking-off-in-the-sun-27988-medium.mp4"
+            src={Video}
             type="video/mp4"
-    ></video>*/}
-        </div>
-        <div className="col-lg-6">
-          <img
-            src={Image2}
-            style={{ height: "400px" }}
-            className="fill px-2 mx-auto"
-          ></img>
-          {/*<video
-            muted
-            playsInline
-            loop
-            autoPlay
-            className="fill px-2 mx-auto"
-            id="p1"
-            src="https://nbaa-demo-video-storage.s3.amazonaws.com/mixkit-airplane-taking-off-in-the-sun-27988-medium.mp4"
-            type="video/mp4"
-
-  ></video>*/}
-        </div>
-      </div>
-      <div className="row py-2 g-0">
-        <div className="col-lg-6">
-          <img
-            src={Image3}
-            style={{ height: "400px" }}
-            className="fill px-2 mx-auto"
-          ></img>
-          {/*<video
-            muted
-            playsInline
-            loop
-            autoPlay
-            className="fill px-2 mx-auto"
-            id="p1"
-            src="https://nbaa-demo-video-storage.s3.amazonaws.com/mixkit-airplane-taking-off-in-the-sun-27988-medium.mp4"
-            type="video/mp4"
-
-></video>*/}
-        </div>
-        <div className="col-lg-6">
-          <img
-            src={Image4}
-            style={{ height: "400px" }}
-            className="fill px-2 mx-auto"
-          ></img>
-          {/*<video
-            muted
-            playsInline
-            loop
-            autoPlay
-            className="fill px-2 mx-auto"
-            id="p1"
-            src="https://nbaa-demo-video-storage.s3.amazonaws.com/mixkit-airplane-taking-off-in-the-sun-27988-medium.mp4"
-            type="video/mp4"
-          ></video> */}
+          ></video>
         </div>
       </div>
     </div>

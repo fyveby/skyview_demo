@@ -1,6 +1,6 @@
 import React from "react";
 import FAQItem from "./FAQItem";
-
+import { Link } from "react-router-dom";
 function FAQ() {
   return (
     <div
@@ -10,15 +10,30 @@ function FAQ() {
       <div
         className="accordion justify-content-center align-items-center"
         id="accordionExample"
-        style={{ height: "90%", width: "90%"}}
+        style={{ height: "90%", width: "90%" }}
       >
         <FAQItem
           id="collapseOne"
           question="How do I contact Fyve By to get started?"
-          answer="There are three ways to contact Fyve By. You can contact us using this
-          same website, click on the “Contact” menu on the side bar. You can
-          also schedule a callback for a follow up conversation from
-          “Dashboard”. Go to the website Fyveby.com and click on Contact Us."
+          answer={
+            <p>
+              There are two ways to contact Fyve By.
+              <br />
+              1. You can contact us directly through this website, click{" "}
+              <Link to="/demoContact" className="link">
+                here
+              </Link>{" "}
+              or on "Contact Us" on the navigation bar. <br />
+              2.You can go to{" "}
+              <a
+                href="https://www.fyveby.com/contactus"
+                className="link"
+                target="_blank"
+              >
+                www.fyveby.com.
+              </a>{" "}
+            </p>
+          }
         ></FAQItem>
         <FAQItem
           id="collapseTwo"
@@ -54,6 +69,26 @@ function FAQ() {
           id="collapseSeven"
           question="Will the application updates interrupt my operations?"
           answer="System updates will be infrequent, however we will work with you on an individual basis to accommodate your schedule."
+        ></FAQItem>
+        <FAQItem
+          id="collapseEight"
+          question="Will this discract my crew?"
+          answer="We have designed built-in warnings to dissuade tunnel vision."
+        ></FAQItem>
+        <FAQItem
+          id="collapseNine"
+          question="Do I still need wing walkers?"
+          answer="We recommend having at least one wing walker present before moving aircraft."
+        ></FAQItem>
+        <FAQItem
+          id="collapseTen"
+          question="How long does it take to add an aircraft to the hangar?"
+          answer=""
+        ></FAQItem>
+        <FAQItem
+          id="collapseEleven"
+          question="What is the pricing model for Skyview?"
+          answer="We use an install plus lease pricing model with the install cost assessed during a facilities tour."
         ></FAQItem>
       </div>
     </div>
