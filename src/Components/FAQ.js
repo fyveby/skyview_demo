@@ -24,7 +24,7 @@ function FAQ() {
                 here
               </Link>{" "}
               or on "Contact Us" on the navigation bar. <br />
-              2.You can go to{" "}
+              2. You can go to{" "}
               <a
                 href="https://www.fyveby.com/contactus"
                 className="link"
