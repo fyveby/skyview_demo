@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import Loading from "./Loading";
 import Video from "../Images/demo_video.mp4";
@@ -9,7 +9,7 @@ function Videos2() {
   // const [allLoaded, setAllLoaded] = useState(false);
   // let load = [false, false, false, false, false];
   // const videos = useRef([]);
-
+  const videoRef = useRef();
   function handleCacheControl(url) {
     if (url.match(/\.data/) || url.match(/\.bundle/)) {
       return "must-revalidate";
@@ -21,12 +21,21 @@ function Videos2() {
   }
 
   const { unityProvider, isLoaded } = useUnityContext({
-    loaderUrl: "Build/WebGLButtonNC.loader.js",
-    dataUrl: "Build/WebGLButtonNC.data",
-    frameworkUrl: "Build/WebGLButtonNC.framework.js",
-    codeUrl: "Build/WebGLButtonNC.wasm",
+    loaderUrl: "Build/build.loader.js",
+    dataUrl: "Build/build.data",
+    frameworkUrl: "Build/build.framework.js",
+    codeUrl: "Build/build.wasm",
     cacheControl: handleCacheControl,
   });
+  const playVid = () => {
+    videoRef.current.play();
+  };
+  useEffect(() => {
+    const t = setTimeout(playVid, 5000);
+    return () => {
+      clearTimeout(t);
+    };
+  }, [isLoaded]);
   // useEffect(() => {
   //   const playFunct = () => {
   //     videos.current.forEach((video) => {
@@ -55,11 +64,6 @@ function Videos2() {
   //   }
   // };
 
-  useEffect(() => {
-    return () => {
-      window.stop();
-    };
-  }, []);
   return (
     <div
       className="container"
@@ -91,7 +95,7 @@ function Videos2() {
             muted
             playsInline
             loop
-            autoPlay
+            ref={videoRef}
             className="fill px-2 mx-auto"
             src={Video}
             type="video/mp4"
